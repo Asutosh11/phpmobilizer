@@ -1,0 +1,8 @@
+DirectoryIndex phpmobilizer.php
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ phpmobilizer.php?url=$1 [qsa]
+
